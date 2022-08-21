@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Automated Tests for Best Buy APIs" tests="26" time="1.074">
+  <testsuite name="Products / Get All Products" id="8b1c98b0-0b4e-4338-b63d-75348a681cc5" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.194">
+    <testcase name="Status code is 200" time="0.194" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="All Products is more than 50000" time="0.194" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Products / Creates a new product" id="e28a28c0-2189-4020-8a92-5d3d6be1369d" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.020">
+    <testcase name="Successful POST request" time="0.020" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="New Product is created" time="0.020" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Products / Get a specific product based on an ID" id="6e010115-d883-4f3b-903c-3efc91f2371a" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.011">
+    <testcase name="Status code is 200" time="0.011" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Product Retrieved Based On Id " time="0.011" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Products / Updates a product based on an ID" id="bc6e7440-7e4f-45a0-8835-a81f4691f56d" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.026">
+    <testcase name="Status code is 200" time="0.026" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Producted is updated successfully" time="0.026" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Products / Delete a single Product" id="5f19543e-59ad-4506-8f1a-f69806347a7b" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.022">
+    <testcase name="Status code is 200" time="0.022" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Product Deleted Based On Id " time="0.022" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Products / Get Limited the number of products returned." id="2a3dd563-8ade-45cc-91a6-a7f1d736ba16" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.123">
+    <testcase name="Status code is 200" time="0.123" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Limited the number of products returned" time="0.123" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Products / Skip the specified number of products" id="7fa5034f-d0b0-4c52-852d-1878addaf066" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.152">
+    <testcase name="Status code is 200" time="0.152" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Skip the specified number of products" time="0.152" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Products / Highest Priced Products" id="f5173909-7a25-4410-8ff1-3ac80c3598d9" timestamp="2022-08-18T22:31:55.798Z" tests="1" failures="0" errors="0" time="0.156">
+    <testcase name="Status code is 200" time="0.156" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Products / Product Name and Description Only" id="1bf9951c-8798-4771-b0d0-38e1ec8d59e2" timestamp="2022-08-18T22:31:55.798Z" tests="1" failures="0" errors="0" time="0.034">
+    <testcase name="Status code is 200" time="0.034" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Stores / Get All Stores" id="a0672a11-cafd-45dc-befc-0d1f8b23f37d" timestamp="2022-08-18T22:31:55.798Z" tests="1" failures="0" errors="0" time="0.020">
+    <testcase name="Status code is 200" time="0.020" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Stores / Create New Store" id="8ffdd896-312d-424e-8b92-05a6ef2c8317" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.016">
+    <testcase name="Successful POST request" time="0.016" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="New Store is Created" time="0.016" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Stores / Get a specific Store based on an ID" id="c6e880ce-37d5-4573-a278-6eefc71a1edf" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.011">
+    <testcase name="Status code is 200" time="0.011" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Store Retrieved Based On Id " time="0.011" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Stores / Updates a Store based on an ID" id="2f3db04b-feae-4b2a-9cb1-1f32c3bdcfac" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.027">
+    <testcase name="Status code is 200" time="0.027" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Store is updated successfully" time="0.027" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Stores / Delete a single Store" id="63a4f9f2-7d1f-4cf9-8d80-06940f68e42f" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.011">
+    <testcase name="Status code is 200" time="0.011" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Store Deleted Based On Id " time="0.011" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Services / Get All Services" id="798c426f-fb45-4d48-a0f1-3a72f3f8da3c" timestamp="2022-08-18T22:31:55.798Z" tests="1" failures="0" errors="0" time="0.009">
+    <testcase name="Status code is 200" time="0.009" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Services / Creates a new Service" id="45d3ef31-86e0-456d-95e4-ec09ca8d9672" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.012">
+    <testcase name="Successful POST request" time="0.012" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="New Service is Created" time="0.012" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Services / Get a specific Service based on an ID" id="8be98e92-1d5d-42bb-b396-107e5e5089b3" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.005">
+    <testcase name="Status code is 200" time="0.005" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Service Retrieved Based On Id " time="0.005" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Services / Updates a Service based on an ID" id="9b0a14ed-850e-4f67-8244-f0a64675591c" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.019">
+    <testcase name="Status code is 200" time="0.019" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Service is updated successfully" time="0.019" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Services / Delete a single Service" id="552036bb-c573-49f3-ae0e-f90cc790fab9" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.014">
+    <testcase name="Status code is 200" time="0.014" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Service Deleted Based On Id " time="0.014" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Categories / Get All Categories" id="2e9e49c0-2141-4fa6-a893-be4732520001" timestamp="2022-08-18T22:31:55.798Z" tests="1" failures="0" errors="0" time="0.036">
+    <testcase name="Status code is 200" time="0.036" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Categories / Creates a new Categorie" id="c048c401-7a55-45ea-b7fc-8552d705f4ed" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.013">
+    <testcase name="Successful POST request" time="0.013" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="New Categorie is Created" time="0.013" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Categories / Get a specific Categorie based on an ID" id="51bd7253-53ca-4f38-bdfa-ef433f996ef4" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.008">
+    <testcase name="Status code is 200" time="0.008" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Categories Retrieved Based On Id " time="0.008" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Categories / Updates a Categories based on an ID" id="a4d07ad6-1ad7-4cbb-bbc4-cf90ae31aba4" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.012">
+    <testcase name="Status code is 200" time="0.012" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Service is updated successfully" time="0.012" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Categories / Delete a single Categorie" id="6bebd39a-3fa9-477a-b31d-e1b042d8d4c8" timestamp="2022-08-18T22:31:55.798Z" tests="2" failures="0" errors="0" time="0.084">
+    <testcase name="Status code is 200" time="0.084" classname="AutomatedTestsForBestBuyApIs"/>
+    <testcase name="Service Deleted Based On Id " time="0.084" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Utilities / The current version of the API" id="0ae2a40b-eb3f-45f9-9f34-3a558a90c6c2" timestamp="2022-08-18T22:31:55.798Z" tests="1" failures="0" errors="0" time="0.003">
+    <testcase name="Status code is 200" time="0.003" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+  <testsuite name="Utilities / Get Healthcheck" id="83d3f225-1891-47ff-a87d-6e3218d15090" timestamp="2022-08-18T22:31:55.798Z" tests="1" failures="0" errors="0" time="0.036">
+    <testcase name="Status code is 200" time="0.036" classname="AutomatedTestsForBestBuyApIs"/>
+  </testsuite>
+</testsuites>

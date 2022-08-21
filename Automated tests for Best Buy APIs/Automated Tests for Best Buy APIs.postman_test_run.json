@@ -1,0 +1,938 @@
+{
+	"id": "8acbdda4-6dec-4e06-9089-42aed0022bd5",
+	"name": "Automated Tests for Best Buy APIs",
+	"timestamp": "2022-08-18T18:16:47.379Z",
+	"collection_id": "16606744-d1c8b4fb-eed8-4619-8578-50c908306cd9",
+	"folder_id": 0,
+	"environment_id": "16606744-32cee09f-3083-41f2-9b94-f24a6fb80f58",
+	"totalPass": 45,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "8b1c98b0-0b4e-4338-b63d-75348a681cc5",
+			"name": "Get All Products",
+			"url": "http://localhost:3030/products",
+			"time": 129,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"All Products is more than 50000": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"All Products is more than 50000": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				129
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"All Products is more than 50000": true
+				}
+			]
+		},
+		{
+			"id": "e28a28c0-2189-4020-8a92-5d3d6be1369d",
+			"name": "Creates a new product",
+			"url": "http://localhost:3030/products",
+			"time": 12,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"New Product is created": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New Product is created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"New Product is created": true
+				}
+			]
+		},
+		{
+			"id": "6e010115-d883-4f3b-903c-3efc91f2371a",
+			"name": "Get a specific product based on an ID",
+			"url": "http://localhost:3030/products?id=9999727",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Product Retrieved Based On Id ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Product Retrieved Based On Id ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Product Retrieved Based On Id ": true
+				}
+			]
+		},
+		{
+			"id": "bc6e7440-7e4f-45a0-8835-a81f4691f56d",
+			"name": "Updates a product based on an ID",
+			"url": "http://localhost:3030/products?id=9999727",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Producted is updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Producted is updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Producted is updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "5f19543e-59ad-4506-8f1a-f69806347a7b",
+			"name": "Delete a single Product",
+			"url": "http://localhost:3030/products?id=9999727",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Product Deleted Based On Id ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Product Deleted Based On Id ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Product Deleted Based On Id ": true
+				}
+			]
+		},
+		{
+			"id": "2a3dd563-8ade-45cc-91a6-a7f1d736ba16",
+			"name": "Get Limited the number of products returned.",
+			"url": "http://localhost:3030/products?$limit=20",
+			"time": 128,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Limited the number of products returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Limited the number of products returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				128
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Limited the number of products returned": true
+				}
+			]
+		},
+		{
+			"id": "7fa5034f-d0b0-4c52-852d-1878addaf066",
+			"name": "Skip the specified number of products",
+			"url": "http://localhost:3030/products?$skip=40000",
+			"time": 138,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Skip the specified number of products": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Skip the specified number of products": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				138
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Skip the specified number of products": true
+				}
+			]
+		},
+		{
+			"id": "f5173909-7a25-4410-8ff1-3ac80c3598d9",
+			"name": "Highest Priced Products",
+			"url": "http://localhost:3030/products?$sort[price]=-1",
+			"time": 146,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				146
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1bf9951c-8798-4771-b0d0-38e1ec8d59e2",
+			"name": "Product Name and Description Only",
+			"url": "http://localhost:3030/products?$select[]=name&$select[]=description",
+			"time": 31,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a0672a11-cafd-45dc-befc-0d1f8b23f37d",
+			"name": "Get All Stores",
+			"url": "http://localhost:3030/stores",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8ffdd896-312d-424e-8b92-05a6ef2c8317",
+			"name": "Create New Store",
+			"url": "http://localhost:3030/stores",
+			"time": 10,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"New Store is Created": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New Store is Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"New Store is Created": true
+				}
+			]
+		},
+		{
+			"id": "c6e880ce-37d5-4573-a278-6eefc71a1edf",
+			"name": "Get a specific Store based on an ID",
+			"url": "http://localhost:3030/stores?id=8932",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Store Retrieved Based On Id ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Store Retrieved Based On Id ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Store Retrieved Based On Id ": true
+				}
+			]
+		},
+		{
+			"id": "2f3db04b-feae-4b2a-9cb1-1f32c3bdcfac",
+			"name": "Updates a Store based on an ID",
+			"url": "http://localhost:3030/stores?id=8932",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Store is updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Store is updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Store is updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "63a4f9f2-7d1f-4cf9-8d80-06940f68e42f",
+			"name": "Delete a single Store",
+			"url": "http://localhost:3030/stores?id=8932",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Store Deleted Based On Id ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Store Deleted Based On Id ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Store Deleted Based On Id ": true
+				}
+			]
+		},
+		{
+			"id": "798c426f-fb45-4d48-a0f1-3a72f3f8da3c",
+			"name": "Get All Services",
+			"url": "http://localhost:3030/services",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "45d3ef31-86e0-456d-95e4-ec09ca8d9672",
+			"name": "Creates a new Service",
+			"url": "http://localhost:3030/services",
+			"time": 11,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"New Service is Created": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New Service is Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"New Service is Created": true
+				}
+			]
+		},
+		{
+			"id": "8be98e92-1d5d-42bb-b396-107e5e5089b3",
+			"name": "Get a specific Service based on an ID",
+			"url": "http://localhost:3030/services?id=34",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Service Retrieved Based On Id ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Service Retrieved Based On Id ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Service Retrieved Based On Id ": true
+				}
+			]
+		},
+		{
+			"id": "9b0a14ed-850e-4f67-8244-f0a64675591c",
+			"name": "Updates a Service based on an ID",
+			"url": "http://localhost:3030/services?id=34",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Service is updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Service is updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Service is updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "552036bb-c573-49f3-ae0e-f90cc790fab9",
+			"name": "Delete a single Service",
+			"url": "http://localhost:3030/services?id=34",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Service Deleted Based On Id ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Service Deleted Based On Id ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Service Deleted Based On Id ": true
+				}
+			]
+		},
+		{
+			"id": "2e9e49c0-2141-4fa6-a893-be4732520001",
+			"name": "Get All Categories",
+			"url": "http://localhost:3030/categories",
+			"time": 30,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c048c401-7a55-45ea-b7fc-8552d705f4ed",
+			"name": "Creates a new Categorie",
+			"url": "http://localhost:3030/categories?=",
+			"time": 18,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"New Categorie is Created": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New Categorie is Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"New Categorie is Created": true
+				}
+			]
+		},
+		{
+			"id": "51bd7253-53ca-4f38-bdfa-ef433f996ef4",
+			"name": "Get a specific Categorie based on an ID",
+			"url": "http://localhost:3030/categories?id=5005",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Categories Retrieved Based On Id ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Categories Retrieved Based On Id ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Categories Retrieved Based On Id ": true
+				}
+			]
+		},
+		{
+			"id": "a4d07ad6-1ad7-4cbb-bbc4-cf90ae31aba4",
+			"name": "Updates a Categories based on an ID",
+			"url": "http://localhost:3030/categories?id=5005",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Service is updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Service is updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Service is updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "6bebd39a-3fa9-477a-b31d-e1b042d8d4c8",
+			"name": "Delete a single Categorie",
+			"url": "http://localhost:3030/categories?id=5005",
+			"time": 62,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Service Deleted Based On Id ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Service Deleted Based On Id ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				62
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Service Deleted Based On Id ": true
+				}
+			]
+		},
+		{
+			"id": "0ae2a40b-eb3f-45f9-9f34-3a558a90c6c2",
+			"name": "The current version of the API",
+			"url": "http://localhost:3030/version",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "83d3f225-1891-47ff-a87d-6e3218d15090",
+			"name": "Get Healthcheck",
+			"url": "http://localhost:3030/healthcheck",
+			"time": 31,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 871,
+	"collection": {
+		"requests": [
+			{
+				"id": "8b1c98b0-0b4e-4338-b63d-75348a681cc5",
+				"method": "GET"
+			},
+			{
+				"id": "e28a28c0-2189-4020-8a92-5d3d6be1369d",
+				"method": "POST"
+			},
+			{
+				"id": "6e010115-d883-4f3b-903c-3efc91f2371a",
+				"method": "GET"
+			},
+			{
+				"id": "bc6e7440-7e4f-45a0-8835-a81f4691f56d",
+				"method": "PATCH"
+			},
+			{
+				"id": "5f19543e-59ad-4506-8f1a-f69806347a7b",
+				"method": "DELETE"
+			},
+			{
+				"id": "2a3dd563-8ade-45cc-91a6-a7f1d736ba16",
+				"method": "GET"
+			},
+			{
+				"id": "7fa5034f-d0b0-4c52-852d-1878addaf066",
+				"method": "GET"
+			},
+			{
+				"id": "f5173909-7a25-4410-8ff1-3ac80c3598d9",
+				"method": "GET"
+			},
+			{
+				"id": "1bf9951c-8798-4771-b0d0-38e1ec8d59e2",
+				"method": "GET"
+			},
+			{
+				"id": "a0672a11-cafd-45dc-befc-0d1f8b23f37d",
+				"method": "GET"
+			},
+			{
+				"id": "8ffdd896-312d-424e-8b92-05a6ef2c8317",
+				"method": "POST"
+			},
+			{
+				"id": "c6e880ce-37d5-4573-a278-6eefc71a1edf",
+				"method": "GET"
+			},
+			{
+				"id": "2f3db04b-feae-4b2a-9cb1-1f32c3bdcfac",
+				"method": "PATCH"
+			},
+			{
+				"id": "63a4f9f2-7d1f-4cf9-8d80-06940f68e42f",
+				"method": "DELETE"
+			},
+			{
+				"id": "798c426f-fb45-4d48-a0f1-3a72f3f8da3c",
+				"method": "GET"
+			},
+			{
+				"id": "45d3ef31-86e0-456d-95e4-ec09ca8d9672",
+				"method": "POST"
+			},
+			{
+				"id": "8be98e92-1d5d-42bb-b396-107e5e5089b3",
+				"method": "GET"
+			},
+			{
+				"id": "9b0a14ed-850e-4f67-8244-f0a64675591c",
+				"method": "PATCH"
+			},
+			{
+				"id": "552036bb-c573-49f3-ae0e-f90cc790fab9",
+				"method": "DELETE"
+			},
+			{
+				"id": "2e9e49c0-2141-4fa6-a893-be4732520001",
+				"method": "GET"
+			},
+			{
+				"id": "c048c401-7a55-45ea-b7fc-8552d705f4ed",
+				"method": "POST"
+			},
+			{
+				"id": "51bd7253-53ca-4f38-bdfa-ef433f996ef4",
+				"method": "GET"
+			},
+			{
+				"id": "a4d07ad6-1ad7-4cbb-bbc4-cf90ae31aba4",
+				"method": "PATCH"
+			},
+			{
+				"id": "6bebd39a-3fa9-477a-b31d-e1b042d8d4c8",
+				"method": "DELETE"
+			},
+			{
+				"id": "0ae2a40b-eb3f-45f9-9f34-3a558a90c6c2",
+				"method": "GET"
+			},
+			{
+				"id": "83d3f225-1891-47ff-a87d-6e3218d15090",
+				"method": "GET"
+			}
+		]
+	}
+}
